@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master DOM Manipulation: Part 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body {
+            background-color: rgb(109, 109, 143);
+        }
+       
+        #main-heading{
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+
+        }
+        .container{
+            margin: 100px auto;
+            border: 1px solid rgb(7, 6, 6);
+            border-radius: 15px;
+            padding-top: 120px;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+
+        }
+        .btn{
+            background-color:  rgb(109, 109, 143);
+            border-radius: 5px;
+            border: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .hidden-content{
+            display: none;
+            color: white;
+
+        }
+        .hidden-content.reveal-btn{
+            display: block;
+            float: right;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Event listeners</h1>
+    <div class="container">
+       
+        <button class="reveal-btn btn">Reveal More</button>
+        <div class="hidden-content">
+            I love Javascript
+          </div>
+    </div>
+  
+    <script src="app3.js"></script>
+</body>
+</html>

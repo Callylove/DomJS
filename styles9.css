@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(250, 244, 244, 0.925);
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.container h2{
+    font-size: 2rem;
+}
+.container .underline{
+    
+    border-bottom: 3px solid rgba(52, 145, 207, 0.877);
+    width: 50px;
+    position: relative;
+    left: 60px;
+    margin-top: 15px;
+    
+}
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 60vh;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+.img-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container img{
+    flex: 1;
+    width: 25%;
+    height: 70%;
+    border-radius: 50%; 
+    box-shadow: 5px -5px 0 2px rgba(52, 145, 207, 0.877);  
+} 
+.review h2{
+    font-size: 1.5rem;
+}
+.review #job{
+    color: rgba(52, 145, 207, 0.877);
+    font-size: .7rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.review #info{
+    margin-top: 20px;
+}
+
+.button-container{
+    margin-top: 10px;
+   
+}
+.button-container button{
+    border: none;
+}
+.button-container button i {
+    margin-right: 10px;
+    color: rgba(52, 145, 207, 0.877);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.review .random-btn{
+    margin-top: 10px;
+    padding: 0 5px;
+    border-color: rgba(52, 145, 207, 0.877);
+    border-radius: 10px;
+    width: 90px;
+
+    height: 25px;
+    background-color: rgba(218, 232, 241, 0.877);
+    color: #3491cfe0;
+    cursor: pointer;
+   
+    text-align: center;
+
+}
+.review .random-btn:hover{
+    background-color: rgba(52, 145, 207, 0.877);
+    color: white;
+}
+.review .circle{
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20px;
+    top: -25px;
+    background-color: rgba(52, 145, 207, 0.877);
+    
+}
+.review .circle i{
+    font-size: .8rem;
+    color: #fff;
+    
+}
+@media (max-width: 852px){
+    .review{
+        width: 50%;
+        height: 80vh;
+    }
+}
